@@ -69,7 +69,7 @@ public class GitkitExample {
 
             try {
                 GitkitUser gitkitUser = null;
-                GitkitClient gitkitClient = GitkitClient.createFromJson("gitkit-server-config.json");
+                GitkitClient gitkitClient = GitkitClient.createFromJson("/apps/apps-config/gitkit-server-config.json");
 
                 gitkitUser = gitkitClient.validateTokenInRequest(request);
                 String userInfo = null;
@@ -99,7 +99,7 @@ public class GitkitExample {
 
             System.out.println("GitKitUploadUsersServlet::doGet()");
 
-            GitkitClient gitkitClient = GitkitClient.createFromJson("gitkit-server-config.json");
+            GitkitClient gitkitClient = GitkitClient.createFromJson("/apps/apps-config/gitkit-server-config.json");
 
             try {
                 String hashKey = "hash-key";
@@ -159,7 +159,7 @@ public class GitkitExample {
 
             System.out.println("GitKiUserInfoServlet::doGet()");
 
-            GitkitClient gitkitClient = GitkitClient.createFromJson("gitkit-server-config.json");
+            GitkitClient gitkitClient = GitkitClient.createFromJson("/apps/apps-config/gitkit-server-config.json");
 
             try {
                 // Verifies a GitkitToken
